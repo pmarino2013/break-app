@@ -1,13 +1,5 @@
 <template>
-  <audio
-    ref="sound"
-    class="margen"
-    loop
-    controls
-    :src="musica"
-    type="audio/mp3"
-  />
-  <button @click="playMusic()">play</button>
+  <audio ref="sound" class="margen" loop :src="musica" type="audio/mp3" />
 </template>
 <script setup>
 const props = defineProps({
