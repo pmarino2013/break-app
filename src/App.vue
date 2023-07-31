@@ -73,27 +73,32 @@ const detenerTiempo = () => {
     <VideoApp v-if="onPlay" />
   </Transition>
   <div class="content">
-    <select v-model="tiempo" :disabled="!boton">
-      <option value="1">1</option>
-
-      <option value="5">5</option>
-      <option value="10">10</option>
-      <option value="15">15</option>
-      <option value="20">20</option>
-      <option value="25">25</option>
-    </select>
+    <Transition>
+      <select v-if="boton" v-model="tiempo" :disabled="!boton">
+        <option value="1">1</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+      </select>
+    </Transition>
     <h1>
       <span v-if="counter > 0"
         >{{ counter > 9 ? counter : "0" + counter }}:</span
       >{{ segundos > 9 ? segundos : "0" + segundos }}
     </h1>
-    <button @click="iniciarTiempo" :disabled="!boton">Iniciar</button>
-    <button @click="detenerTiempo" :disabled="boton">Parar</button>
+    <button v-if="boton" @click="iniciarTiempo" :disabled="!boton">
+      <i class="fa fa-play fa-3x" aria-hidden="true"></i>
+    </button>
+    <button v-else @click="detenerTiempo" :disabled="boton">
+      <i class="fa fa-stop fa-3x" aria-hidden="true"></i>
+    </button>
     <div v-if="onPlay">
       <MusicApp />
     </div>
   </div>
-  <!-- <input type="number" v-model="tiempo" /> -->
+
   <div class="capa"></div>
 </template>
 
