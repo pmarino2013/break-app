@@ -11,7 +11,7 @@ Se puede elegir entre varios tiempos y cuando empieza la cuenta regresiva suena 
 
 ### Librerías o frameworks utilizados
 
-- Framework: [Vue js]('https://vuejs.org/')
-- Librería: [Font-awesome]('https://fontawesome.com/v4/icons/')
+- Framework: <a href="https://vuejs.org/">Vue js</a>
+- Librería: <a href="https://fontawesome.com/v4/icons/">Font- awesome</a>
 
 `Hecho con 🤍 por Pablo Marino`
