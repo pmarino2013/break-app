@@ -74,7 +74,7 @@ const detenerTiempo = () => {
   </Transition>
   <div class="content">
     <Transition>
-      <select v-if="boton" v-model="tiempo" :disabled="!boton">
+      <select v-show="boton" v-model="tiempo" :disabled="!boton">
         <!-- <option value="1">1</option> -->
         <option value="5">5</option>
         <option value="10">10</option>
