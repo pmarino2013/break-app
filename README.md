@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# Break Music ☕
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Aplicación para utilizar como pantalla de break al hacer descansos de clases virtuales.
+Se puede elegir entre varios tiempos y cuando empieza la cuenta regresiva suena una música y muestra un video de fondo.
 
-## Recommended IDE Setup
+### Instrucciones
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- Clonar proyecto
+- Entrar al directorio del proyecto y ejecutar en conaola `npm install`
+- Ejecutar en consola el comando `npm run dev` para verlo en ejecución
+
+### Librerías o frameworks utilizados
+
+- Framework: [Vue js]('https://vuejs.org/')
+- Librería: [Font-awesome]('https://fontawesome.com/v4/icons/')
+
+`Hecho con 🤍 por Pablo Marino`
