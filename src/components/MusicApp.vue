@@ -4,7 +4,7 @@
     class="margen"
     loop
     :src="musicSelected"
-    type="audio/mp3"
+    type="audio/ogg"
   />
 </template>
 <script setup>
@@ -12,17 +12,15 @@ const props = defineProps({
   play: Boolean,
 });
 import { ref, onMounted, computed } from "vue";
-import musica1 from "/music/music01.mp3";
-import musica2 from "/music/music02.mp3";
+import { musicArray } from "../helpers/arrayMusic";
 
 const sound = ref(null);
-const musica = ref(musica1);
-
-const musicArray = ref([musica1, musica2]);
+const musica = ref(null);
+let cantidad = musicArray.length - 1;
 
 const musicSelected = computed(() => {
-  let opcion = Math.round(Math.random() * 1);
-  return (musica.value = musicArray.value[opcion]);
+  let opcion = Math.round(Math.random() * cantidad);
+  return (musica.value = musicArray[opcion]);
 });
 
 function playMusic() {
