@@ -13,8 +13,11 @@ const videos = ref([
   "/videos/dev4.mp4",
 ]);
 
+let cantidadVideo = videos.value.length - 1;
+
 const videoSelected = computed(() => {
-  let option = Math.round(Math.random() * 3);
+  let option = Math.round(Math.random() * cantidadVideo);
+  console.log(option);
   return videos.value[option];
 });
 </script>
