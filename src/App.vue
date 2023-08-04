@@ -27,6 +27,9 @@ watch(counter, (newCounter) => {
     boton.value = true;
     // counter.value = 0;
   }
+  if (newCounter == 0 && initialValue == 1) {
+    segundos.value = 59;
+  }
 });
 
 watch(segundos, (newSegundos) => {
