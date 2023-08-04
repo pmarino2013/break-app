@@ -4,21 +4,16 @@
   </video>
 </template>
 <script setup>
-import { ref, computed } from "vue";
+import { computed } from "vue";
 
-const videos = ref([
-  "/videos/dev1.mp4",
-  "/videos/dev2.mp4",
-  "/videos/dev3.mp4",
-  "/videos/dev4.mp4",
-]);
+import { videos } from "../helpers/arrayVideos";
 
-let cantidadVideo = videos.value.length - 1;
+let cantidadVideo = videos.length - 1;
 
 const videoSelected = computed(() => {
   let option = Math.round(Math.random() * cantidadVideo);
-  console.log(option);
-  return videos.value[option];
+
+  return videos[option];
 });
 </script>
 <style scope>
