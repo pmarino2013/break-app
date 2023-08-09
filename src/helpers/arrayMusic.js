@@ -6,6 +6,8 @@ import musica5 from "/music/music05.ogg";
 import musica6 from "/music/music06.ogg";
 import musica7 from "/music/music07.ogg";
 import musica8 from "/music/music08.ogg";
+import musica9 from "/music/music09.ogg";
+import musica10 from "/music/music10.ogg";
 
 export const musicArray = [
   { track: musica1, derechos: "" },
@@ -21,5 +23,14 @@ export const musicArray = [
   {
     track: musica8,
     derechos: '"Doing That Work" Música proporcionada por https://slip.stream',
+  },
+  {
+    track: musica9,
+    derechos:
+      '"TIGERCLAW", Mifune Música proporcionada por https://slip.stream',
+  },
+  {
+    track: musica10,
+    derechos: '"This Is Facts" Música proporcionada por https://slip.stream',
   },
 ];

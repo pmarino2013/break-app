@@ -21,7 +21,6 @@ const sound = ref(null);
 const musica = ref(null);
 const descripcion = ref("");
 let cantidad = musicArray.length - 1;
-console.log(musicArray);
 
 const musicSelected = computed(() => {
   let opcion = Math.round(Math.random() * cantidad);
