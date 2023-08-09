@@ -9,7 +9,6 @@ import { computed } from "vue";
 import { videos } from "../helpers/arrayVideos";
 
 let cantidadVideo = videos.length - 1;
-
 const videoSelected = computed(() => {
   let option = Math.round(Math.random() * cantidadVideo);
 
