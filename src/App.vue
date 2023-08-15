@@ -78,7 +78,7 @@ const detenerTiempo = () => {
   <div class="content">
     <Transition>
       <select v-show="boton" v-model="tiempo" :disabled="!boton">
-        <!-- <option value="1">1</option> -->
+        <option value="1">1</option>
         <option value="5">5</option>
         <option value="10">10</option>
         <option value="15">15</option>
@@ -88,9 +88,11 @@ const detenerTiempo = () => {
       </select>
     </Transition>
     <h1>
-      <span v-if="counter > 0"
-        >{{ counter > 9 ? counter : "0" + counter }}:</span
-      >{{ segundos > 9 ? segundos : "0" + segundos }}
+      <span v-if="counter > 0" :class="counter < 2 && 'counter-class'">
+        {{ counter > 9 ? counter : "0" + counter }}:</span
+      ><span :class="counter < 2 && 'counter-class'">{{
+        segundos > 9 ? segundos : "0" + segundos
+      }}</span>
     </h1>
     <button v-if="boton" @click="iniciarTiempo" :disabled="!boton">
       <i class="fa fa-play fa-3x" aria-hidden="true"></i>
@@ -139,5 +141,8 @@ button {
   background: #1c1c1d;
   opacity: 0.6;
   /* mix-blend-mode: overlay; */
+}
+.counter-class {
+  color: rgb(245, 51, 51);
 }
 </style>
