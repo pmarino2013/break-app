@@ -1,14 +1,3 @@
-// import musica1 from "/music/music01.ogg";
-// import musica2 from "/music/music02.ogg";
-// import musica3 from "/music/music03.ogg";
-// import musica4 from "/music/music04.ogg";
-// import musica5 from "/music/music05.ogg";
-// import musica6 from "/music/music06.ogg";
-// import musica7 from "/music/music07.ogg";
-// import musica8 from "/music/music08.ogg";
-// import musica9 from "/music/music09.ogg";
-// import musica10 from "/music/music10.ogg";
-
 export const musicArray = [
   {
     track:
